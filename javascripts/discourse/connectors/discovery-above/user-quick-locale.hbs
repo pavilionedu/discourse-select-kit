@@ -1,0 +1,12 @@
+{{
+  combo-box
+  value=currentLocale
+  content=availableLocales
+  valueProperty="value"
+  langProperty="value"
+  onChange=(action "updateCurrentLocale")
+  options=(hash
+    filterable=true
+    none="select_kit.default_header_text"
+  )
+}}
